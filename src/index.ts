@@ -14,7 +14,7 @@ connectDB();
 
 // Middleware
 app.use(cors({
-  origin: 'http://localhost:5173', // Frontend URL
+  origin: ['http://localhost:5173', 'https://ai-chat-frontend-lac.vercel.app', 'https://ai-chat-frontend-lac.vercel.app/'],
   methods: ['GET', 'POST'],
   credentials: true
 }));
